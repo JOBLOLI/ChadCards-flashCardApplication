@@ -7,9 +7,9 @@ function shuffleArray(array) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const flashCards = [
-        { question: "Q1", answer: "A1" },
-        { question: "Q2", answer: "A2" },
-        { question: "Q3", answer: "A3" }
+        { question: "Q1 what are literals", answer: "constant values of numbers/text/true-false that are immutable" },
+        { question: "Q2 difference between primitive datatype and reference datatype", answer: "primitive are built-in types like int, double, char, boolean (hold values directly in the stack) \n non-primitives/Reference are Object classes like String, Array, List etc. (hold addresses pointing at the value)" },
+        { question: "Q3 difference between do-while loop and while loop", answer: "do-while loop will run through the body (hehe) at least once before checking the condition. while loop checks the condition first" }
         // ...more questions and answers here
     ];
 
