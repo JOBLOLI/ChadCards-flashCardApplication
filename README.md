@@ -1,0 +1,2 @@
+# ChadCards-flashCardApplication
+simple frontend flashcard application for when your brain wants to flex while your irl body flexes in the gym
