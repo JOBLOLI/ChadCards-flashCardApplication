@@ -6,13 +6,7 @@ function shuffleArray(array) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const flashCards = [
-        { question: "Q1 what are literals", answer: "constant values of numbers/text/true-false that are immutable" },
-        { question: "Q2 difference between primitive datatype and reference datatype", answer: "primitive are built-in types like int, double, char, boolean (hold values directly in the stack) \n non-primitives/Reference are Object classes like String, Array, List etc. (hold addresses pointing at the value)" },
-        { question: "Q3 difference between do-while loop and while loop", answer: "do-while loop will run through the body (hehe) at least once before checking the condition. while loop checks the condition first" }
-        // ...more questions and answers here
-    ];
-
+    
     // Shuffle the questions 
     shuffleArray(flashCards);
 
@@ -20,11 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const flashcardElement = document.getElementById('flashcard');
     const questionElement = document.getElementById('question');
     const answerElement = document.getElementById('answer');
+    const prevButton = document.getElementById('previous-card');
 
     function displayCard() {
         questionElement.textContent = flashCards[currentCard].question;
         answerElement.textContent = flashCards[currentCard].answer;
         flashcardElement.classList.remove('is-flipped');
+
+        // Disable Previous button on first card
+        if (currentCard == 0) {
+             prevButton.disabled = true;
+        } else {
+            prevButton.disabled = false;
+        }
+
     }
 
     document.getElementById('flip-card').addEventListener('click', () => {
@@ -35,6 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         currentCard = (currentCard + 1) % flashCards.length;
         displayCard();
     });
+
+    prevButton.addEventListener('click', () => {
+        if (currentCard === 0) return;
+
+        currentCard--;
+        displayCard();
+    });
+
 
     displayCard();
 });
