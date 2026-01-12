@@ -1,10 +1,29 @@
     const flashCards = [
-        { question: "Q1 what are literals", answer: "constant values of numbers/text/true-false that are immutable" },
-        { question: "Q2 difference between primitive datatype and reference datatype", answer: "primitive are built-in types like int, double, char, boolean (hold values directly in the stack) \n non-primitives/Reference are Object classes like String, Array, List etc. (hold addresses pointing at the value)" },
+        { question: "Q1 what are literals", answer: "constant values of immutable variables" },
+        { question: "Q2 difference between primitive datatype and reference datatype", answer: "primitive: built-in types (int, double, char, bool) & hold values directly on stack \nnon-primitives/Reference: Object classes (String, Array, List) and hold addresses pointing at the value" },
         { question: "Q3 difference between do-while loop and while loop", answer: "do-while loop will run through the body (hehe) at least once before checking the condition. while loop checks the condition first" },
         { question: "Q4 what is JRE (not Joe Rogan Experience), and how to check if it's installed on your PC", answer: "Java runtime environment: runs Java programs, includes java libraries (similar to .NET Runtime), to check: java -version"},
         { question: "Q5 what is JDK, and how to check if it's installed on PC", answer: "Java development kit: Java compiler (similar to .NET SDK), to check: run javac -version"},
-        { question: "Q6 what is JVM, what does it allow", answer: "Java virtual machine: it's integrated inside JDK and it converts Java into machine code (similar to CLR). it allows WORA write-once-run-everywhere"},
-        { question: "Q7 can you have multiple main methods in a java project", answer: "you can have multiple main methods and each can be compiled individually, in contrast to C#, where there is a single entry point and project compiled as single assembly"}
+        { question: "Q6 what is JVM, what does it allow", answer: "Java virtual machine: it's integrated inside JDK and it converts Java into machine code (similar to CLR). it allows WORA write-once-run-anywhere"},
+        { question: "Q7 can you have multiple main methods in a java project", answer: "you can have multiple main methods and each can be compiled individually, in contrast to C#, where there is a single entry point and project compiled as single assembly"},
+        { question: "Q8 where can breakpoints be set?", answer: "at executable lines"},
+        { question: "Q9 what the frick is wrong with this loop? \nwhile (windowType == null || windowType != \"g\" || windowType != \"t\")", answer: "infinite loop: if windowType is g than it naturally cannot be t. \ncorrect: (!windowType.equals(\"g\")) && !windowType.equals(\"t\") " },
+        { question: "Q10 what is the default local hosting port for web development frameworks (react, springboot etc.)", answer: "EIGHTY EIGHTY 8080!!!"},
+        { question: "Q11 while debugging, a line hightlighted in green means", answer: "next line to be executed."},
+        { question: "Q12 difference between if and switch expressions", answer: "if conditions tested must be bool. switch can be any, it simply checks if the evaluated expression match any of the cases. switch also NEEDS a break and a default case"},
+        { question: "Q13 use case difference between for and while loops", answer: " for when you know how many iterations. while when you don't know..duh"},
+        { question: "Q14 difference between new Random(6967) and new Random()", answer: "the first one uses a seed value (6967) which is the id associated to a squence of random numbers. meaning everytime, we run the application, it will call the same sequence of numbers."},
+        { question: "Q15 what are Heap and Stack", answer: "both areas of memory. Stack stores local variables and function call information, Heap stores Objects"},
+        { question: "Q16 is a String immutable, what does immutability mean", answer: "not immutable, it means that once created in the memory it cannot be changed"},
+        { question: "Q17 can you change a String from immutable to mutable", answer: "no, any modification like String string += 'value' creates another String"},
+        { question: "Q18 what are StringBuilders", answer: "classes that modify Strings, used instead of modifying Strings directly. Can append, insert, delete without creating new objects"},
+        { question: "Q19 difference between StringBuilders and StringBuffers", answer: "Builder is faster and single-threaded"},
+        { question: "Q20 what are the types of exceptions", answer: "checked and unchecked. checked: validators created by coder to create exceptions using throws, occur at compiled time. unchecked: exceptions that do not need to be declared or caught, occur at runtime"},
+        { question: "Q21 throw vs throws", answer: "Throw: method to throw a single exception object at a time. Throws: written in method signature stating that the method MIGHT throw an exception"},
+        { question: "Q22 abstraction defrick is that", answer: "Process to hide implementation details, done through abstract classes and interface"},
+        { question: "Q23 encapsulation defrick is that", answer: "Process to bundle fields and (get and set) methods. that way you can create response and validation to restrict direct access to the fields"},
+        { question: "Q24 abstract class vs interface", answer: "abstract classes are skeleton classes with fields and virtual methods to be overriden by child classes. Interface are collections of methods without implementation. interface components don't rely on eachother, facilitate decoupling and can inherit multiple child classes. use abstract classes when you want default behaviour."},
+        { question: "Q25 what is the properties file in springboot", answer: "config file for port number, verison info, database connection, environment variables, access keys"},
+        { question: "Q25 what is good code", answer: "readable, maintainable. Readable: consistent conventions. Maintainable: Testable and with scalability in mind: separte layers (UI, API, DATABASE)."}
         // ...more questions and answers here
     ];
