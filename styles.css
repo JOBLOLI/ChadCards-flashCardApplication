@@ -9,6 +9,12 @@ body {
     overflow: hidden;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .flashcard-container {
     text-align: center;
     background-color: white;

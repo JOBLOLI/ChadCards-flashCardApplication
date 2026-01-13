@@ -24,6 +24,8 @@
         { question: "Q23 encapsulation defrick is that", answer: "Process to bundle fields and (get and set) methods. that way you can create response and validation to restrict direct access to the fields"},
         { question: "Q24 abstract class vs interface", answer: "abstract classes are skeleton classes with fields and virtual methods to be overriden by child classes. Interface are collections of methods without implementation. interface components don't rely on eachother, facilitate decoupling and can inherit multiple child classes. use abstract classes when you want default behaviour."},
         { question: "Q25 what is the properties file in springboot", answer: "config file for port number, verison info, database connection, environment variables, access keys"},
-        { question: "Q25 what is good code", answer: "readable, maintainable. Readable: consistent conventions. Maintainable: Testable and with scalability in mind: separte layers (UI, API, DATABASE)."}
+        { question: "Q26 what is good code", answer: "readable, maintainable. Readable: consistent conventions. Maintainable: Testable and with scalability in mind: separte layers (UI, API, DATABASE)."},
+        { question: "Q27 what is polymorphism", answer: "same method call can behave differently depending on object. Done through overloading and overriding"},
+        { question: "Q28 what is overloading and overriding", answer: "Overloading: same method name, different parameters using constructors. Overriding: subclass provides its own overriden method to parent classe's method (virtual method in C# term)"}
         // ...more questions and answers here
     ];

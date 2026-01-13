@@ -6,22 +6,22 @@ function shuffleArray(array) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Shuffle the questions 
-    shuffleArray(flashCards);
+ 
+    let activeCards = flashCards;
+    shuffleArray(activeCards);
 
     let currentCard = 0;
     const flashcardElement = document.getElementById('flashcard');
     const questionElement = document.getElementById('question');
     const answerElement = document.getElementById('answer');
     const prevButton = document.getElementById('previous-card');
+    const nextButton = document.getElementById('next-card');
 
     function displayCard() {
-        questionElement.textContent = flashCards[currentCard].question;
-        answerElement.textContent = flashCards[currentCard].answer;
+        questionElement.textContent = activeCards[currentCard].question;
+        answerElement.textContent = activeCards[currentCard].answer;
         flashcardElement.classList.remove('is-flipped');
 
-        // Disable Previous button on first card
         if (currentCard == 0) {
              prevButton.disabled = true;
         } else {
@@ -30,11 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    const catButtons = document.querySelectorAll('.cat-btn');
+    catButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // update active styles
+            catButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // switch dataset
+            const cat = btn.dataset.cat; // "java" or "sql"
+            activeCards = (cat === "java") ? flashCards : sqlFlashCards;
+
+            // reset + reshuffle for that category
+            currentCard = 0;
+            shuffleArray(activeCards);
+            displayCard();
+        });
+    });
+
+
     document.getElementById('flip-card').addEventListener('click', () => {
         flashcardElement.classList.toggle('is-flipped');
     });
 
-    document.getElementById('next-card').addEventListener('click', () => {
+    nextButton.addEventListener('click', () => {
         currentCard = (currentCard + 1) % flashCards.length;
         displayCard();
     });
