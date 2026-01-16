@@ -26,6 +26,15 @@
         { question: "Q25 what is the properties file in springboot", answer: "config file for port number, verison info, database connection, environment variables, access keys"},
         { question: "Q26 what is good code", answer: "readable, maintainable. Readable: consistent conventions. Maintainable: Testable and with scalability in mind: separte layers (UI, API, DATABASE)."},
         { question: "Q27 what is polymorphism", answer: "same method call can behave differently depending on object. Done through overloading and overriding"},
-        { question: "Q28 what is overloading and overriding", answer: "Overloading: same method name, different parameters using constructors. Overriding: subclass provides its own overriden method to parent classe's method (virtual method in C# term)"}
+        { question: "Q28 what is overloading and overriding", answer: "Overloading: same method name, different parameters using constructors. Overriding: subclass provides its own overriden method to parent classe's method (virtual method in C# term)"},
+        { question: "Q29 which expression skips processing the remainder of the code in its block in it's current iteration", answer: "continue"},
+        { question: "Q30 what does the static keyword mean", answer: "this method belong to the class itself, not an object. can't initialize it"},
+        { question: "Q31 what is the package keyword", answer: "declares a namespace. put it on top of a java file along with all the immigrants"},
+        { question: "Q32 what is delegation", answer: "it's the process of separating functions that do separate things to different classes"},
+        { question: "Q33 what are properties, accessors and mutators", answer: "properties in java isn't quite the same as in C# it simply refers to the fields. but conceptually both languages do the same things (use getters and setters aka accessors and mutators) to access and modify fields."},
+        { question: "Q34 what is this", answer: "keyword to refer to current object. used to distinguish an object's field from a method parameter. example: this.age = age assigning field = parameter"},
+        { question: "Q35 can you use   this   in a static method", answer: "Nahh cuz static methods can't be instantiated"},
+        { question: "Q36 what are constructors and why use them", answer: "method to initialize properties (fields) of an object. must have same name as its class. no return type. used to ensure objects are initialized in a valid state"},
+        { question: "Q37 what is dependency injection,", answer: "design pattern that provides required objects to a class through constructors, methods, or container, rather tahn instantiating them internally. Makes the code easier to read, test and scale."}
         // ...more questions and answers here
     ];
