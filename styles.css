@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 60px;
     background: linear-gradient(135deg, #d43535, #f29d77);
     margin: 0;
     overflow: hidden;
