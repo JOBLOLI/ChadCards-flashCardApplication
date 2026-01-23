@@ -39,6 +39,9 @@
         { question: "Q38 composition vs inheritance.", answer: "inheritance extends a parent class. Composition contains (implements) another class."},
         { question: "Q39 what is @Override annotation. and what are annotations", answer: "Annotations are metadata for compiler to run error checks both at compile and runtime. @Override tells compiler a method overrides or implements a parent/interface method."},
         { question: "Q40 implements vs extends keywords", answer: "implements: used when implement interface methods. extends: used when declaring interface, it can inherit from other classes/interfaces."},
-        { question: "Q41 how do you call a static method of an interface if possible", answer: "interfaces CAN have static/default method implementation. you can call it by using the interface name directly (without creating an object cuz you can't) and a dot operator"}
+        { question: "Q41 how do you call a static method of an interface if possible", answer: "interfaces CAN have static/default method implementation. you can call it by using the interface name directly (without creating an object cuz you can't) and a dot operator"},
+        { question: "Q42 what is data marshalling and unmarshalling howwdy", answer: "marshalling: object -> data, unmarshalling is the inverse. data form could mean html, json etc."},
+        { question: "Q43 what is does the PrintWriter class do and what is the flush() method", answer: "PrintWriter writes output to file or stream. When you write data to a file/stream, they are not immediately written, they are sent to a buffer. flush() writes any buffered output to the file"},
+        { question: "Q44 what is SDLC", answer: "Software Development Life cycle: composed of different models.. waterfall.. iterative.. Agile"}
         // ...more questions and answers here
     ];

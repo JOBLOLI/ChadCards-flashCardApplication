@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.add('active');
 
             // switch dataset
-            const cat = btn.dataset.cat; // "java" or "sql"
-            activeCards = (cat === "java") ? flashCards : sqlFlashCards;
+            const cat = btn.dataset.cat; 
+            activeCards = (cat === "java") ? flashCards : (cat == "sql") ? sqlFlashCards : collectionFlashCards ;
 
             // reset + reshuffle for that category
             currentCard = 0;
