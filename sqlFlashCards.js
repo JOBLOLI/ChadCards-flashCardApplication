@@ -8,6 +8,11 @@
         { question: "Q7 is this correct? WHERE Salary = NULL", answer: "no, Salary IS NULL"},
         { question: "Q8 INNER vs LEFT or RIGHT JOIN", answer: "INNER: returns matching rows only. LEFT/RIGHT: returns LEFTorRIGHT rows + matching rows"},
         { question: "Q9 COUNT(*) vs COUNT(column)", answer: "COUNT(column) ignore NULLS"},
-        { question: "Q10 does AVG() count NULLs", answer: "NOPE"}
+        { question: "Q10 does AVG() count NULLs", answer: "NOPE"},
+        { question: "Q11 ORDER BY x AND y or ORDER BY x, y", answer: "AEK LA VIRGULE"},
+        { question: "Q12 gimme aggregation functions", answer: "COUNT, CONCAT, MAX, MIN, AVG, SUM etc."},
+        { question: "Q13 difference between ALTER TABLE and UPDATE tablename", answer: "ALTER TABLE is used to alter the table itself so like MODIFY COLUMN, columns, ADD CONSTRAINT, PRIMARY KEY(), FOREIGN KEY() REFERENCES. UPDATE tablename to update rows using SET and WHERE"},
+        
+
         // ...more questions and answers here
     ];

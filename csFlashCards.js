@@ -1,0 +1,32 @@
+    const csFlashCards = [
+        { question: "Q1 Explicit vs Implicit interfaces", answer: "Explicit: used to hide members behind inferface, methods can only be accessible through interface. in code you must write Iinterface.Method().."},   
+        { question: "Q2 how does .NET work?", answer: "C# language -compiler-> IL -CLR-> Machine Code"},
+        { question: "Q3 what are CLR and FCL", answer: "CLR: compiles .NET with class loader, memory manager, garbage colection etc. FCL: Framework class Library containing BCL General library"},
+        { question: "Q4 how to know if a project is .NET Core or Framework", answer: "Properties on Project, Edit Project file to check csproj File (Framework don't have this)"},
+        { question: "Q5 what is Console.ReadKey()", answer:"takes input can also be used to block execution between methods"},
+        { question: "Q6 what are access modifiers public and private", answer: "public can be accessed anywhere, private only within same class & same Assembly (not even child class)"},
+        { question: "Q7 what is access modifier internal", answer: "can be accessed in all classes but same Assembly"},
+        { question: "Q8 what is access modifier protected", answer: "can be accessed in same class & same Assembly, or child classes of any assembly"},
+        { question: "Q9 what is private protected", answer: "can be accessed in same class and child classes of the same assebly"},
+        { question: "Q10 how many times is memory allocated to a static field in the heap", answer: "one, because you don't instantiate it for each object, it's a shared field"},
+        { question: "Q11 what are parameter modifiers", answer: "specifies how parameter receive value (default, ref, out, in, params)"},
+        { question: "Q12 what are in and out parameter modifier", answer: "in: readonly, out: allows method to return additional value by reference, requires method to assign the parameter before return"},
+        { question: "Q13 difference between out and ref", answer: "ref must be initialized before call, out must be assigned inside method"},
+        { question: "Q14 what are properties", answer: "collection of 2 accessors get, set used to access private fields for security"},
+        { question: "Q15 what are enumerations", answer: "collection of constants, can also have numbers assigned to its members (kinda like index)"},
+        { question: "Q16 what are structures can they inherit interfaces", answer: "container of fields, they can inherit interfaces, can't be inherited themselves, can't inherit classes, constructor must initialize all fields"},
+        { question: "Q17 how are structures different from classes", answer: "they are different in a way that 2 structures on the stack don't interfere with each other, but two classes referencing the same object from the Heap interfere with eachother"},
+        { question: "Q18 what are generics", answer: "let's you write code that works with any type, but you can specify the type when code is being used (ie. Lists: List<int> myList = new List<int>())"},
+        { question: "Q19 give http verbs and their definition", answer: "GET: gets data, POST: submits data, PUT: replaces data, DELETE: deletes, PATCH: modifies partial data, HEAD: what im looking for and requests same response as GET but without response body (only header)"},
+        { question: "Q20 what is the IEnumerable and how to implement it", answer: "interface that let's you iterate through a collection. simple implementation: IEnumerable<int> numbers = new List<int> {1, 2, 3} foreach (var number in numbers) {Console.Writeline(number)}"},
+        { question: "Q21 what is Linq", answer: "a namespace that let's user use SQL-like queries to filter, sort, modify data, can work with IEnumerable to iterate and sort/modify items in collection"},
+        { question: "Q22 when to use IEnumerable compared to List", answer: "IEnumerable when iterable/readonly and List when you need to actually modify items"},
+        { question: "Q23 what is var", answer: "implicit typing, let's C# compiler to infer the variable datatype"},
+        { question: "Q24 describe multi-threading in C#", answer: "using different threads to execute different tasks at the same time"},
+        { question: "Q25 what is async/await", answer: "async makes method asynchronous and await suspends execution of a task without blocking the thread"},
+        { question: "Q26 what happens if you forget await in an async method", answer: "the async method starts but doesn't wait for it to finish"},
+        { question: "Q27 what happens if you give the return type void instead of Task to an async method,", answer: "you can't await it, exceptions crash the process, caller doesn't know when it finishes 8==D--"},
+        
+           
+        // ...more questions and answers here
+    ];

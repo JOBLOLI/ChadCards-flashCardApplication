@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // switch dataset
             const cat = btn.dataset.cat; 
-            activeCards = (cat === "java") ? flashCards : (cat == "sql") ? sqlFlashCards : collectionFlashCards ;
+            activeCards = (cat === "java") ? flashCards : (cat == "sql") ? sqlFlashCards : (cat == "collection") ? collectionFlashCards : csFlashCards ;
 
             // reset + reshuffle for that category
             currentCard = 0;
